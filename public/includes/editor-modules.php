@@ -3,7 +3,7 @@
 /**
  * These functions are then localized and then appended with JS in enter-editor.js
  *  All are protectd under a capability and logged in check using a filterable function lasso_user_can()
- *
+ *  *** Pretty much everything you need to modify the html of the UI is housed here.
  * @since 1.0
  */
 
