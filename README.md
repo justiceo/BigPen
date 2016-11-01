@@ -12,6 +12,8 @@
 	</tr>
 </table>
 
+The goal of this fork is to make it easier to extend Editus as opposed to correcting or refactoring the original source code. Since the project is in active development, chances are that this fork would be pulling from the upstream branch once in a while. Hence, instead of hand-coding a new component into the plugin, add a hook that allows the new component to be defined outside the plugin.
+
 Editus is a commercial plugin available from https://edituswp.com. The plugin is hosted here on a public GitHub repository in order to better faciliate community contributions from developers and users alike. If you have a suggestion, a bug report, or a patch for an issue, feel free to submit it [here](https://github.com/AesopInteractive/lasso/issues). When submitting a pull request, test Editus with [Aesop Story Theme](https://github.com/AesopInteractive/aesop-story-theme), and make any pull requests against our latest release branch.
 
 We do ask, however, that if you are using the plugin on a live site that you please purchase a valid license from the website. We cannot provide support to anyone who does not hold a valid license key.
