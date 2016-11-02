@@ -112,14 +112,13 @@ function lasso_editor_component_sidebar() {
 
 	// let users add custom css classes
 	$custom_classes = apply_filters( 'lasso_sidebar_classes', '' );
-	?>
-	<div id="lasso--sidebar" class="<?php echo sanitize_html_class( $custom_classes );?>" >
-		<div class="lasso--sidebar__inner">
-			<div id="lasso--component__settings"></div>
-		</div>
-	</div>
+	$html  = '<div id="lasso--sidebar" class="' . sanitize_html_class( $custom_classes ) . '" >';
+	$html .= '	<div class="lasso--sidebar__inner">';
+	$html .= '		<div id="lasso--component__settings"></div>';
+	$html .= '	</div>';
+	$html .= '</div>';
 
-	<?php return ob_get_clean();
+	return apply_filters('lasso_sidebar_html', $html);
 }
 
 /**
