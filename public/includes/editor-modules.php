@@ -103,7 +103,9 @@ function lasso_editor_controls() {
  *
  * @since 1.0
  */
-function lasso_editor_component_sidebar() {
+if (! function_exists( 'lasso_editor_component_sidebar' )) {
+function lasso_editor_component_sidebar()
+{
 
 	ob_start();
 
@@ -120,6 +122,7 @@ function lasso_editor_component_sidebar() {
 	</div>
 
 	<?php return ob_get_clean();
+}
 }
 
 /**

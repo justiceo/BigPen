@@ -44,6 +44,8 @@ class lasso {
 
 		require_once LASSO_DIR.'/public/includes/underscore-templates.php';
 
+		$this->require_overrides();
+
 		require_once LASSO_DIR.'/public/includes/editor-modules.php';
 		require_once LASSO_DIR.'/public/includes/helpers.php';
 		require_once LASSO_DIR.'/public/includes/editor-modules--gallery.php';
@@ -62,6 +64,10 @@ class lasso {
 		//enqueue assets
 		new assets();
 
+	}
+
+	public function require_overrides() {
+		require_once LASSO_DIR.'/public/includes/editor-modules-v2.php';
 	}
 
 	/**
